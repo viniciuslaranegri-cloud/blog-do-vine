@@ -45,7 +45,14 @@ font-weight: bold;
         <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
             tecnologia.</p></div>
             
-    </main>
+    </main><script>
+        const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+</script>
 </body>
 
 
