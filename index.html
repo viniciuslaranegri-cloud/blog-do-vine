@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<style>
-        header {
-            background-color: #5c7ea1;
-            color: #0de29b;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
+<html lang="pt-br">
 
-        main {
-            background-color: #efe309;
-            color: #000000;
-            display: flex;
-        }
-            img {
-            width: 80px;
-            height: 80px;
-        }  
-        
-        div p {
-font-weight: bold;
-} .artigo-autor {
-font-weight: bold;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog da Ale</title>
+    <style>
+            header {
+                background-color: #117766;
+                color: #FFFFFF;
+                text-align: center;
+                max-width: 800px;
+                margin: 0 auto;
+            }
 
+            main {
+                background-color: #e1e79e;
+                color: #4c79aae6;
+                display: flex;
+            }
+
+            div p {
+font-weight: bold;
 }
-        
 
-    </style>
-
+.artigo-autor {
+font-weight: bold;
+}
+        </style>
 </head>
 
 <body>
@@ -36,22 +35,25 @@ font-weight: bold;
         <h1>Meu blog tech</h1>
         <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
         <button>❤️<span>0</span></button>
-    <button>🙄<span>0</span></button>
+        <button>🙄​<span>0</span></button>
+       
     </header>
-    
     <main>
-        </img src="imagem-blog.png"
+        <img src="imagem-blog.png"
             alt="logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
-            <div class="artigo-autor"> <h2>Meu primeiro post</h2>
-        <p>Por: Vinicius</p>
+     <div class="artigo-autor">
+            <h2>Meu primeiro post</h2>
+        <p>Por: Alexandra</p>
         <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
-            tecnologia.</p> <button>❤️<span>0</span></button>
-     <button>🙄<span>0</span></button></div>
-            
-    </main><script>
+            tecnologia.</p>
+        <button>❤️<span>0</span></button>
+        <button>🙄​<span>0</span></button>
+        </div>
+    </main>
+    <script>
         const botao = document.querySelectorAll("button");
 
-botoes.forEach(function (botao) {
+       botoes.forEach(function (botao) {
         let curtiu = false;
         botao.addEventListener("click", botaoClicado);
         function botaoClicado() {
@@ -68,6 +70,4 @@ botoes.forEach(function (botao) {
     })
 </script>
 </body>
-
-
-</html>x
+</html>
