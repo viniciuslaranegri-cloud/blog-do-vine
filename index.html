@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog do vine</title>
-    <style>
+<style>
         header {
             background-color: #5c7ea1;
             color: #0de29b;
@@ -19,16 +14,21 @@
             color: #000000;
             display: flex;
         }
-
-        img {
+            img {
             width: 80px;
             height: 80px;
-        }  div p {
+        }  
+        
+        div p {
 font-weight: bold;
 } .artigo-autor {
 font-weight: bold;
+
 }
+        
+
     </style>
+
 </head>
 
 <body>
@@ -37,30 +37,7 @@ font-weight: bold;
         <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
     </header>
     <button>❤️<span>0</span></button>
-     <button>🙄<span>0</span></button>
-    <style>
-        header {
-            background-color: #5c7ea1;
-            color: #0de29b;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        main {
-            background-color: #efe309;
-            color: #000000;
-            display: flex;
-            img {
-            width: 80px;
-            height: 80px;
-        }  div p {
-font-weight: bold;
-} .artigo-autor {
-font-weight: bold;
-        }
-
-    </style>
+    <button>🙄<span>0</span></button>
     <main>
         </img src="imagem-blog.png"
             alt="logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
@@ -71,12 +48,23 @@ font-weight: bold;
      <button>🙄<span>0</span></button></div>
             
     </main><script>
-        const botao = document.querySelector("button");
-botao.addEventListener("click", botaoClicado);
-function botaoClicado() {
-let texto = botao.querySelector("span");
-texto.textContent++;
-}
+        const botao = document.querySelectorAll("button");
+
+botoes.forEach(function (botao) {
+        let curtiu = false;
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            if (curtiu === false){
+                texto.textContent++;
+                curtiu = true;
+            } else{
+                texto.textContent--;
+                curtiu = false;
+            }
+        }
+    })
 </script>
 </body>
 
